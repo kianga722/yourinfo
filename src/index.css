@@ -47,8 +47,76 @@ table {
 	border-spacing: 0;
 }
 
-
-/* 
-Default React Styling 
+/*
+Fonts
 */
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* 
+Header 
+*/
+
+.header {
+  margin: 30px 0;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fe5900;
+  text-decoration: underline;
+}
+
+/*
+Content
+*/
+
+.data {
+  max-width: 500px;
+  margin: 30px auto;
+
+  text-align: center;
+}
+
+.title,
+.more-title {
+  color: red;
+}
+
+.title {
+  margin-bottom: 5px;
+}
+
+.ipAddress,
+.location {
+  margin-bottom: 20px;
+}
+
+.ipAddress > .info,
+.location > .info {
+  font-size: 1.8rem;
+}
+
+.more {
+  padding: 0 30px;
+
+  text-align: left;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.more > div {
+  padding: 15px 0;
+}
+
+.more > div:not(:last-child) {
+  border-bottom: 5px solid green;
+}
+
+.userAgent > div:not(:last-child),
+.screen > div:not(:last-child) {
+  margin-bottom: 5px;
+}
