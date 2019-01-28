@@ -1,5 +1,5 @@
 # your-info
-This project aims to display information that can be obtained from a user simply visiting a website
+This project aims to display information that can be obtained from a user simply visiting a website, similar to [ipchicken](https://www.ipchicken.com/)
 
 [View App](https://toptester1.github.io/user-info/)
 
