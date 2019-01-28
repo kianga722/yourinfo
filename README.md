@@ -3,7 +3,7 @@ This project aims to display information that can be obtained from a user simply
 
 [View App](https://toptester1.github.io/user-info/)
 
-![screenshot](https://github.com/toptester1/user-info/blob/master/public/images/screenshot.jpg)
+![screenshot](https://github.com/toptester1/user-info/blob/master/public/images/screenshot.png)
 
 ## Summary
 
