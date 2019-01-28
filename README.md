@@ -9,4 +9,4 @@ This project aims to display information that can be obtained from a user simply
 
 * Built primarily using React, the [ipifiy](https://www.ipify.org/) API, and the [ipdata](https://ipdata.co/) API
 * Displays visitor's IP Address, location, and information that can be obtained from the browser
-* Motivation was to develop skills in React by building a simple webapp
+* Motivation was to develop skills in React by building a simple web app
