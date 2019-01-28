@@ -23,7 +23,7 @@ class Loading extends React.Component {
   render() {
     return(
       <div className='loading'>
-        Loading
+        <div className='lds-circle'><div></div></div>
       </div>
     )
   }
@@ -159,7 +159,7 @@ class Data extends React.Component {
           country={this.props.country}
           zip={this.props.zip}
         />
-        <div class='more'>
+        <div className='more'>
           <ISP isp={this.props.isp} />
           <UserAgent />
           <Java />
@@ -193,17 +193,16 @@ class InfoApp extends React.Component {
         this.setState({
           ipAddress: ip
         }))
-      .then(() => fetch(`http://ip-api.com/json/${this.state.ipAddress}`))    
+      .then(() => fetch(`https://api.ipdata.co/${this.state.ipAddress}?api-key=test`))    
       .then(location => location.json())
       .then(location =>
         this.setState({
           city: location['city'],
-          regionName: location['regionName'],
-          country: location['country'],
-          zip: location['zip'],
-          isp: location['isp']
+          regionName: location['region'],
+          country: location['country_name'],
+          zip: location['postal'],
+          isp: location['organisation']
         }))
-
   }
 
   render() {
