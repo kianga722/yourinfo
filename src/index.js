@@ -29,6 +29,20 @@ class Loading extends React.Component {
   }
 }
 
+class Error extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return(
+      <div className='error'>
+        <div>Error! Unable to retrieve information.</div>
+        <div>Please check console for details...</div>
+      </div>
+    )
+  }
+}
+
 class IP extends React.Component {
   constructor(props) {
     super(props);
@@ -181,7 +195,8 @@ class InfoApp extends React.Component {
       regionName: '',
       country: '',
       zip: '',
-      isp: ''
+      isp: '',
+      errorMsg: false
       }
     };
   
@@ -203,6 +218,13 @@ class InfoApp extends React.Component {
           zip: location['postal'],
           isp: location['organisation']
         }))
+      .catch(error => {
+        console.log(error)
+        this.setState({
+          errorMsg: true
+        })
+      }) 
+       
   }
 
   render() {
@@ -216,7 +238,10 @@ class InfoApp extends React.Component {
                     country={this.state.country}
                     zip={this.state.zip}
                     isp={this.state.isp}
+                    errorMsg={this.state.errorMsg}
                   />
+    } else if (this.state.errorMsg) {
+      component = <Error />
     } else {
       component = <Loading />
     }
