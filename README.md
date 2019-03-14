@@ -1,4 +1,4 @@
-# your-info
+# yourinfo
 This project aims to display information that can be obtained from a user simply visiting a website (similar to [ipchicken](https://www.ipchicken.com/))
 
 [View App](https://kianga722.github.io/yourinfo/)
