@@ -1,8 +1,8 @@
 {
-  "name": "user-info",
+  "name": "yourinfo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://toptester1.github.io/user-info/",
+  "homepage": "https://kianga722.github.io/yourinfo/",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

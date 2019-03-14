@@ -1,9 +1,9 @@
 # your-info
 This project aims to display information that can be obtained from a user simply visiting a website (similar to [ipchicken](https://www.ipchicken.com/))
 
-[View App](https://toptester1.github.io/user-info/)
+[View App](https://kianga722.github.io/yourinfo/)
 
-![screenshot](https://github.com/toptester1/user-info/blob/master/public/images/screenshot.png)
+![screenshot](https://github.com/kianga722/yourinfo/blob/master/public/images/screenshot.png)
 
 ## Summary
 
